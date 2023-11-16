@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"files.associations": {
+			"DOOMNET.C": "cpp",
+			"PORT.C": "cpp"
+		}
+	}
+}

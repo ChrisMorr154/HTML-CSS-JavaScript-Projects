@@ -1,0 +1,393 @@
+*
+{
+  margin: 0;
+  padding: 0;
+}
+
+body
+{
+  width: 100%;
+  height: 100vh;
+  background-color: white;
+  /**background-image: url("IMG-4521.GIF");
+  background-size: cover;**/
+}
+
+header
+{
+  position: relative;
+  padding: 0 2rem;
+  width: 100vh;
+  padding-bottom: 60px;
+}
+
+.navbar
+{
+  width: 100%;
+  height: 60px;
+  max-width: 95%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: fixed;
+  border-bottom: 1px solid black;
+}
+
+a
+{
+  color: black;
+  font-size: 1rem;
+  font: arial;
+  list-style: none;
+  text-decoration: none;
+}
+
+ul li
+{
+  list-style: none;
+}
+
+a:hover
+{
+  color: darkgoldenrod;
+  font-weight: bolder;
+  font-size: 1.5rem;
+}
+
+.SeaByteImage
+{
+  display: block;
+  cursor: pointer;
+  width: 100px; 
+  height: 50px;
+}
+
+
+.logo a
+{
+  font-size: 2rem;
+  font-weight: bolder;
+}
+
+.links
+{
+  position: relative;
+  display: flex;
+  gap: 2rem;
+}
+
+.sidebar 
+{
+  position: fixed;
+  top: 60px;
+  left: 80%;
+  width: 80rem;
+  height: 100vh;
+  background-color: rgba(255, 255, 255, 0.5);
+  transition: left 0.1s ease;
+}
+
+.sidebar ul 
+{
+  list-style: none;
+  padding: 0;
+  margin: 20px;
+}
+
+.sidebar li 
+{
+  margin-bottom: 10px;
+}
+
+.sidebar-open 
+{
+  left: 100%;
+}
+
+.togglebtn 
+{
+  width: 40px;
+  height: 30px;
+  cursor: pointer;
+  position: relative;
+}
+
+.stick 
+{
+  display: block;
+  height: 5px;
+  width: 100%;
+  border-radius: 10px;
+  background-color: black;
+  margin-bottom: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.togglebtn:hover .stick 
+{
+  background-color: darkgoldenrod;
+  height: 6px;
+}
+
+
+.container0
+{
+  height: 70vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: right;
+  text-align: center;
+}
+
+.container0 img.Cover {
+  margin-top: 10px; /* Adjust the spacing between the <p> and the image */
+}
+
+.container {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: space-between;
+}
+
+.container .content {
+  display: flex;
+  flex-direction: column; /* Stack elements vertically */
+  align-items: center; /* Center horizontally within the container */
+}
+
+.container h1 {
+  margin-bottom: 10px; /* Add space between the <h1> and the <button> */
+}
+
+.container1
+{
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: space-between;
+}
+
+
+.container2
+{
+  font-size: 2rem;
+  color: black;
+  margin: 60px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0; 
+  transform: translateX(0); 
+  transition: opacity 0.5s, transform 0.5s;
+}
+
+.container2.show 
+{
+  opacity: 1; 
+  transform: translateX(20%);
+}
+
+.container2.noshow 
+{
+  opacity: 1; 
+  transform: translateX(-20%);
+}
+
+.container2 span
+{
+  font-size: 2rem;
+}
+
+.container2 span1
+{
+  color: darkgoldenrod;
+  margin-left: 10px;
+  padding: 20px;
+  display: flex;
+  text-align: left;
+  font-size: 3rem;
+}
+
+.container3
+{
+  display: flex;
+  font-size: 2rem;
+  color: black;
+  align-items: center;
+  text-align: center;
+  margin-bottom:25vh;
+}
+
+.container3 p
+{
+  color: black;
+  width: 50vw;
+}
+
+.container3 span
+{
+  color: darkgoldenrod;
+  font-size: 3rem;
+}
+
+.container4
+{
+  width: 100vw
+}
+
+.container5
+{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin-bottom: 25vh;
+}
+
+.container5 p
+{
+  color: black;
+  font-size: 2rem;
+  
+}
+
+.container5 span
+{
+  color: darkgoldenrod;
+  font-size: 3rem;
+}
+
+.container6
+{
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: space-between;
+}
+
+.container6 p
+{
+  color: black;
+  font-size: 2rem;
+  width: 50vw;
+  margin: auto;
+}
+
+.container6 span
+{
+  color: darkgoldenrod;
+  font-size: 3rem;
+}
+
+.Cover
+{
+  height: 70vh;
+  width: 50vw;
+  border-radius: 10%;
+  margin-top: 50px;
+}
+
+.Cover1
+{
+  height: 70vh;
+  width: 50vw;
+  border-radius: 10%;
+  margin-top: 50px;
+}
+
+
+#image1.Cover:hover
+{
+  cursor: pointer;
+}
+
+#image2:active
+{
+  transform: scale(0.9);
+}
+
+#image2:hover
+{
+  cursor: pointer;
+}
+
+
+body.active
+{
+  background: #2a2828;
+}
+
+body.active * 
+{
+  color: white;
+}
+
+body.active span 
+{
+  color: darkgoldenrod;
+}
+
+body.active #toggle
+{
+  background-color: white;
+}
+
+body.active #toggle .indicator
+{
+  background: rgb(174, 172, 172);
+}
+
+body.active .stick
+{
+  background: white;
+}
+
+#toggle
+{
+ position: relative;
+ display: block;
+ width: 50px;
+ height: 25px;
+ border-radius: 25px;
+ background: #171717;
+ transition: 0.5s;
+ cursor: pointer;
+ box-shadow: inset;
+}
+
+#toggle .indicator
+{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 25px;
+  height: 25px;
+  background: #444;
+  border-radius: 50%;
+  transform: scale(0.9);
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+#toggle.active .indicator
+{
+  left: 25px;
+}
+
+footer
+{
+  margin-top: 15vh;
+}
+
+h1
+{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

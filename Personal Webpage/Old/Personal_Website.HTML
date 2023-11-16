@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en"></html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="author" content="Chris M." />
+    <link rel="stylesheet" type="text/css" href="Personal_Website.CSS" />
+    <img src="Images/" class="chris">
+    <img src="Images/" class="chrisBackground">
+    <script src="scrollbar.js"></script>
+    <title>Christian's Website</title>
+  </head>
+  <body>
+    <div id="scrollbar"></div>
+    <div id="scrollPath"></div>
+    <div class="container">
+      <!--create class "bubbles"-->
+      <div class="bubbles">
+        <span style="--i:11;"></span>
+        <span style="--i:26;"></span>
+        <span style="--i:12;"></span>
+        <span style="--i:14;"></span>
+      </div>    
+    </div>
+    <div id="toggle">
+      <i class="indicator"></i>
+    </div>
+    <script>
+      const body = document.querySelector('body');
+      const toggle = document.getElementById('toggle');
+      toggle.onclick = function()
+      {
+        toggle.classList.toggle('active');
+        body.classList.toggle('active');
+      }
+    </script>
+    <div class="container1">
+      <div class="MoveOnTouchArt">
+        <div class="stick1"></div>
+        <div class="stick2"></div>
+        <div class="stick3"></div>
+        <div class="stick4"></div>
+        <div class="stick5"></div>
+        
+      </div>
+    </div>
+    <header>
+      <section>
+      <h1>Welcome! <span>My name is</span></h1>
+    </section>
+    <!-- Links to diffenent pages -->
+      <nav>
+        <ul>
+          <li><a href="https://github.com/ChrisMorr154/Resume-Projects">Github</a></li>
+          <li><a href="file:///C:/Users/chris/Desktop/Resume%20Projects/Personal_Website/aboutMe.html">About me</a></li>
+          <li><a href="#">Contact</a></li> 
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section>
+        <h2>Christian <span>Morris</span></h2>
+      </section>
+      <section>
+        <div class="marquee">Check out my Github page!</div>
+        <!--<marquee> Check out my Github page! </marquee>
+        <marquee 
+          direction="right" 
+          behavior="alternate" 
+          style="border: orangered 4px SOLID">
+        </marquee>-->
+        <p>This is a simple webpage layout that I have created to show my technical skillset.</p>
+        <button type="projects" onclick="location.href='///C:/Users/chris/Desktop/Resume%20Projects/Personal_Website/projects.html'">Projects</button>
+      </section>
+    </main>
+  </script>
+  </body>
+  <footer>
+    <p>&copy; 2023 Christian's Website. All rights reserved by Christian.</p> 
+  </footer>
+</html>
